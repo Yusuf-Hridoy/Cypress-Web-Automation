@@ -1,3 +1,4 @@
+// this page is for login page locator 
 class login
 {
     txtusername= "input[placeholder='Username']";

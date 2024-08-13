@@ -1,3 +1,4 @@
+// this page locator are for that are clickable and  redirect to the expected page
 class FeatureCheck{
 
     tadmin = "body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) > span:nth-child(2)";
