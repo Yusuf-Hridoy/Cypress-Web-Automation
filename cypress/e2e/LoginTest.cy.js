@@ -3,7 +3,7 @@ import login from "../../POM/LoginPage";
 
 describe('My First Test', () => {
    
-    it('Login with right credintial',()=>{
+    it.only('Login with right credintial',()=>{
       cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
       const ln = new login();
       ln.setusername("Admin");
@@ -13,7 +13,7 @@ describe('My First Test', () => {
 
 
     })
-    it.only('Login with wrong password',()=>{
+    it('Login with wrong password',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         const ln = new login();
         ln.setusername("Admin");
@@ -23,7 +23,7 @@ describe('My First Test', () => {
   
   
       })
-      it.only('Login with wrong user name',()=>{
+      it('Login with wrong user name',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         const ln = new login();
         ln.setusername("Admi");
