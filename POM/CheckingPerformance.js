@@ -11,7 +11,7 @@ class performance{
         cy.get(this.txtemployeename).type('Cherly  Adams');
     }
     setjobtitle(jobtitle){
-        cy.get(this.selectJobtitle).click().contains('IT Manager');
+        cy.get(this.selectJobtitle).click().scrollIntoView().contains('IT Manager');
     }
 }
 
